@@ -21,10 +21,10 @@ for i in sounds:
         # "replace": true を追加
         sounds[i]["replace"] = True
         if type(sounds[i]["sounds"][j]) is str:
-            print(f"{sounds[i]["sounds"][j]} -> {AFTER_SOUND_NAME}\n")
+            print(f'{sounds[i]["sounds"][j]} -> {AFTER_SOUND_NAME}\n')
             sounds[i]["sounds"][j] = AFTER_SOUND_NAME
         else:
-            print(f"{sounds[i]["sounds"][j]["name"]} -> {AFTER_SOUND_NAME}\n")
+            print(f'{sounds[i]["sounds"][j]["name"]} -> {AFTER_SOUND_NAME}\n')
             sounds[i]["sounds"][j]["name"] = AFTER_SOUND_NAME
 
 
