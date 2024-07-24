@@ -18,6 +18,8 @@ sounds = read(TARGET_PATH)
 
 for i in sounds:
     for j in range(len(sounds[i]["sounds"])):
+        # "replace": true を追加
+        sounds[i]["replace"] = True
         if type(sounds[i]["sounds"][j]) is str:
             print(f"{sounds[i]["sounds"][j]} -> {AFTER_SOUND_NAME}\n")
             sounds[i]["sounds"][j] = AFTER_SOUND_NAME
